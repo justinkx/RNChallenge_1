@@ -1,17 +1,19 @@
 import React from 'react';
-import {View, StyleSheet,SafeAreaView, Text} from 'react-native';
+import {View, StyleSheet, SafeAreaView, Text} from 'react-native';
+import global from '../../Theme/global';
+import colors from '../../Theme/colors';
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[global.safeArea, styles.container]}>
       <Text>HomeScreen</Text>
     </SafeAreaView>
-    
   );
 }
 
 const styles = StyleSheet.create({
-  container: {flex: 1,
-  justifyContent: 'center',
-alignItems: 'center'},
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
