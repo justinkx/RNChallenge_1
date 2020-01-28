@@ -1,5 +1,5 @@
 import colors from './colors';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 const global = StyleSheet.create({
     safeArea: {
@@ -7,5 +7,6 @@ const global = StyleSheet.create({
         backgroundColor: colors.homeBackground
     }
 });
-
+export const width = Dimensions.get('window').width;
+export const height = Dimensions.get('window').height;
 export default global;
