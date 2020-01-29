@@ -5,7 +5,8 @@ import colors, {getRandomColor} from '../../Theme/colors';
 export default function StoriesSwiper({stories}) {
   return (
     <View style={styles.container}>
-      <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
+      <ScrollView contentContainerStyle={{paddingLeft: 20}}
+       showsHorizontalScrollIndicator={false} horizontal={true}>
         {stories.map((story, index) => (
           <View
             key={index}
@@ -33,7 +34,6 @@ export default function StoriesSwiper({stories}) {
 const styles = StyleSheet.create({
   container: {
     height: 120,
-    paddingLeft: 20,
     marginTop: 15,
   },
   image: {
