@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './SliderEntry.style';
-import {getRandomColor} from '../../Theme/colors';
+import {getRandomColor} from '../../../Theme/colors';
 
 export default class SliderEntry extends PureComponent {
   static propTypes = {

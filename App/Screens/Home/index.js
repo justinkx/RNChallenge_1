@@ -14,7 +14,7 @@ import SearchBar from '../../Components/SearchBar';
 import Header from './Header';
 import {stories} from '../../Apis/stories';
 import StoriesSwiper from './Stories';
-import GroupCarousel from './Groups';
+import GroupCarousel from './carousel/Groups';
 import { groups } from '../../Apis/groups';
 
 export default function HomeScreen() {

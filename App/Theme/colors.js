@@ -5,7 +5,8 @@ const colors = {
     badge: '#f8a5a5',
     text: '#6a6b93',
     subTitle: '#bcc5d0',
-    search: '#9aa8ba'
+    search: '#9aa8ba',
+    messages: '#9dc3e7'
 }
 export const getRandomColor =()=> {
     var letters = '0123456789ABCDEF';

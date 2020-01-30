@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions, Platform } from 'react-native';
-import colors from '../../Theme/colors';
+import colors from '../../../Theme/colors';
 
 const IS_IOS = Platform.OS === 'ios';
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
@@ -81,7 +81,8 @@ export default StyleSheet.create({
     messageContainer: {
         flexDirection: 'row',
         justifyContent: 'flex-start',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        paddingTop: 6
     },
     lastUser :{
         width: 30,
