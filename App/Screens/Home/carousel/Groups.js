@@ -8,6 +8,7 @@ import { sliderWidth, itemWidth } from './SliderEntry.style';
 export default class GroupCarousel extends PureComponent {
   
   render() {
+    
     return (
       <View style={styles.exampleContainer}>
       <Carousel
@@ -34,9 +35,10 @@ export default class GroupCarousel extends PureComponent {
   </View>
     );
   }
-   _renderItemWithParallax ({item, index}) {
+   _renderItemWithParallax = ({item, index}) => {
     return (
         <SliderEntry
+          navigation={this.props.navigation}
           data={item}
           index={index}
         />

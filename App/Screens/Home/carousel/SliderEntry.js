@@ -15,7 +15,9 @@ export default class SliderEntry extends PureComponent {
     } = this.props;
 
     return (
-      <TouchableOpacity activeOpacity={1} style={styles.slideInnerContainer}>
+      <TouchableOpacity onPress={()=>this.props.navigation.navigate('Groups',{
+        data: this.props.data
+      })} activeOpacity={1} style={styles.slideInnerContainer}>
         <View
           style={[styles.imageContainer, {backgroundColor: getRandomColor()}]}>
           <View style={styles.titleContainer}>

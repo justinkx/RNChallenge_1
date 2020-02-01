@@ -16,8 +16,11 @@ import {stories} from '../../Apis/stories';
 import StoriesSwiper from './Stories';
 import GroupCarousel from './carousel/Groups';
 import { groups } from '../../Apis/groups';
+import LastMessage from '../../Components/LastMessage';
+import { useNavigation } from '@react-navigation/native';
 
 export default function HomeScreen() {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={[global.safeArea, styles.container]}>
       <Header>
@@ -39,8 +42,9 @@ export default function HomeScreen() {
           <Text style={styles.groups}>Groups</Text>
           <Text style={styles.groupCount}>4</Text>
         </View>
-        <GroupCarousel groups={groups} />
+        <GroupCarousel navigation={navigation} groups={groups} />
       </ScrollView>
+      <LastMessage />
     </SafeAreaView>
   );
 }
