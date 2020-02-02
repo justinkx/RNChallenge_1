@@ -27,8 +27,8 @@ export const TabNavigator = () => (
       },
     })}
     tabBarOptions={{
-      activeTintColor: 'blue',
-      inactiveTintColor: 'gray',
+      activeTintColor: '#615c97',
+      inactiveTintColor: '#adacac',
     }}>
     <BottomTab.Screen name={'Home'} component={HomeNavigator} />
     <BottomTab.Screen name={'Profile'} component={ProfileNavigator} />
