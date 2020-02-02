@@ -1,8 +1,10 @@
 import React from 'react';
-import {View, Image, ScrollView, StyleSheet} from 'react-native';
+import {View, Image,TouchableOpacity, ScrollView, StyleSheet} from 'react-native';
 import colors, {getRandomColor} from '../../Theme/colors';
+import { useNavigation } from '@react-navigation/native';
 
 export default function StoriesSwiper({stories}) {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={{paddingLeft: 20}}
@@ -16,7 +18,8 @@ export default function StoriesSwiper({stories}) {
                 justifyContent: index % 2 === 0 ? 'flex-end' : 'flex-start',
               },
             ]}>
-            <View
+            <TouchableOpacity
+            onPress={()=> navigation.navigate('Stories',{story: story})}
               style={[
                 styles.avatar,
                 {
@@ -24,7 +27,7 @@ export default function StoriesSwiper({stories}) {
                 },
               ]}>
               <Image style={styles.image} source={{uri: story.image}} />
-            </View>
+            </TouchableOpacity>
           </View>
         ))}
       </ScrollView>

@@ -1,6 +1,7 @@
 export const groups = [
   {
     title: 'Workout Squad',
+    bg: '#B91372',
     lastMessage: {
       image: 'https://randomuser.me/api/portraits/women/79.jpg',
       message: `Who's Going to the GYM tonight?`,
@@ -65,6 +66,7 @@ export const groups = [
   },
   {
     title: 'Training Team',
+    bg: '#09C6F9',
     lastMessage: {
       image: 'https://randomuser.me/api/portraits/women/70.jpg',
       message: `Which Slot Should I take?`,
@@ -88,11 +90,48 @@ export const groups = [
         name: 'Broose',
         image: 'https://randomuser.me/api/portraits/women/76.jpg',
         time: '9.20PM',
+      },
+      {
+        message: `It's not possible to chart the schedule today.`,
+        name: 'You',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '5.10PM',
+      },
+      {
+        message: 'Hi Southee..!',
+        name: 'Broose',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '9.20PM',
+      },
+      {
+        message: `It's not possible to chart the schedule today.`,
+        name: 'William',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '5.10PM',
+      },
+      {
+        message: 'Hi Southee..!',
+        name: 'Broose',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '9.20PM',
+      },
+      {
+        message: `It's not possible to chart the schedule today.`,
+        name: 'William',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '5.10PM',
+      },
+      {
+        message: 'Hi Southee..!',
+        name: 'Broose',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '9.20PM',
       }
     ]
   },
   {
     title: 'Team Outing',
+    bg: '#F67062',
     lastMessage: {
       image: 'https://randomuser.me/api/portraits/women/10.jpg',
       message: `Are u All free?`,
@@ -110,11 +149,48 @@ export const groups = [
         name: 'Shane',
         image: 'https://randomuser.me/api/portraits/women/76.jpg',
         time: '8.20PM',
+      },
+      {
+        message: `It's not possible to chart the schedule today.`,
+        name: 'William',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '5.10PM',
+      },
+      {
+        message: 'Hi Southee..!',
+        name: 'You',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '9.20PM',
+      },
+      {
+        message: `It's not possible to chart the schedule today.`,
+        name: 'William',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '5.10PM',
+      },
+      {
+        message: 'Hi Southee..!',
+        name: 'Broose',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '9.20PM',
+      },
+      {
+        message: `It's not possible to chart the schedule today.`,
+        name: 'William',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '5.10PM',
+      },
+      {
+        message: 'Hi Southee..!',
+        name: 'You',
+        image: 'https://randomuser.me/api/portraits/women/76.jpg',
+        time: '9.20PM',
       }
     ]
   },
   {
     title: 'Swimming Team',
+    bg: '#9921E8',
     lastMessage: {
       image: 'https://randomuser.me/api/portraits/women/70.jpg',
       message: `Water changed today morning`,

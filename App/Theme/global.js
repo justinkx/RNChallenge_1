@@ -5,6 +5,9 @@ const global = StyleSheet.create({
     safeArea: {
         flex: 1,
         backgroundColor: colors.homeBackground
+    },
+    textCenter: {
+        textAlign: 'center'
     }
 });
 export const width = Dimensions.get('window').width;

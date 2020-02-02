@@ -2,6 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../Screens/Home/index';
 import GroupsScreen from '../Screens/Groups/index';
+import StoriesScreen from '../Screens/Stories/index';
 
 const Stack = createStackNavigator();
 export const HomeNavigator = ({navigation,route}) => {
@@ -17,5 +18,6 @@ export const HomeNavigator = ({navigation,route}) => {
   }}>
     <Stack.Screen name="Profile" component={HomeScreen}></Stack.Screen>
     <Stack.Screen name="Groups" component={GroupsScreen}></Stack.Screen>
+    <Stack.Screen name="Stories" component={StoriesScreen} ></Stack.Screen>
   </Stack.Navigator>
 )};

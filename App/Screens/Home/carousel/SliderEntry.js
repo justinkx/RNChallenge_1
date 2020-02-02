@@ -11,7 +11,7 @@ export default class SliderEntry extends PureComponent {
 
   render() {
     const {
-      data: {title, lastMessage},
+      data: {title,bg, lastMessage},
     } = this.props;
 
     return (
@@ -19,7 +19,7 @@ export default class SliderEntry extends PureComponent {
         data: this.props.data
       })} activeOpacity={1} style={styles.slideInnerContainer}>
         <View
-          style={[styles.imageContainer, {backgroundColor: getRandomColor()}]}>
+          style={[styles.imageContainer, {backgroundColor: bg}]}>
           <View style={styles.titleContainer}>
             <View style={styles.titleView}>
               <Text style={styles.title}>{title}</Text>
